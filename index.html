@@ -1,587 +1,549 @@
 <!DOCTYPE html>
 <html lang="et">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RTG-Raidi Tuning Garage | Auto Detailing Tartumaa, Ulila</title>
-  <meta name="description" content="RTG-Raidi Tuning Garage tegeleb sõidukite iluhooldustega – poleerimine, vahatamine, keemiline pesu, naha hooldus, tähistaeva paigaldus ja palju muud. Tartumaa, Ulila." />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>RTG-Raidi Tuning Garage | Auto Detailing · Ulila, Tartumaa</title>
+  <meta name="description" content="RTG-Raidi Tuning Garage — professionaalne auto detailing Tartumaal. Poleerimine, vahatamine, nahkverhoilu, tähistaevas, keemiline pesu ja palju muud."/>
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Montserrat:wght@400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
 <!-- ===== MOBILE MENU ===== -->
-<nav class="mobile-menu" aria-label="Mobiilmenüü">
+<div class="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigatsioon">
   <a href="#avaleht">Avaleht</a>
+  <a href="#meist">Meist</a>
   <a href="#teenused">Teenused</a>
   <a href="#galerii">Galerii</a>
-  <a href="#boonus">Lisateave</a>
-  <a href="#kontakt" class="btn btn-primary">Broneeri aeg</a>
-</nav>
+  <a href="#kontakt" class="btn btn-gold">Broneeri aeg</a>
+</div>
 
 <!-- ===== NAVBAR ===== -->
-<header id="navbar" role="banner">
+<header id="navbar">
   <div class="container nav-inner">
-    <a href="#avaleht" class="nav-logo" aria-label="RTG-Raidi Tuning Garage">
-      <div class="logo-icon" aria-hidden="true">🔧</div>
+
+    <a href="#avaleht" class="nav-logo" aria-label="RTG-Raidi Tuning Garage avaleht">
+      <img class="nav-logo-img" src="images/rtg-logo.jpg" alt="RTG-Raidi Tuning Garage logo"/>
       <div>
-        <span class="accent">RTG</span>-Raidi Tuning Garage
+        <div class="nav-logo-text"><span>RTG</span>-Raidi Tuning Garage</div>
+        <span class="nav-logo-sub">Auto Detailing · Ulila</span>
       </div>
     </a>
 
-    <ul class="nav-links" role="list">
-      <li><a href="#avaleht">Avaleht</a></li>
-      <li><a href="#teenused">Teenused</a></li>
-      <li><a href="#galerii">Galerii</a></li>
-      <li><a href="#boonus">Lisateave</a></li>
-      <li><a href="#kontakt">Kontakt</a></li>
-    </ul>
+    <nav class="nav-links" aria-label="Peamenüü">
+      <a href="#meist">Meist</a>
+      <a href="#teenused">Teenused</a>
+      <a href="#galerii">Galerii</a>
+      <a href="#boonus">Boonus</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
 
-    <a href="#kontakt" class="btn btn-primary nav-cta">Broneeri aeg</a>
+    <div class="nav-cta-wrap">
+      <a href="#kontakt" class="btn btn-gold">Broneeri aeg</a>
+    </div>
 
     <button class="hamburger" aria-label="Ava menüü" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </button>
+
   </div>
 </header>
 
 <!-- ===== HERO ===== -->
-<section id="avaleht" aria-label="Pealeht">
+<section id="avaleht">
   <div id="hero">
     <div class="hero-bg" role="img" aria-label="RTG Tuning Garage töökoda"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-scan" aria-hidden="true"></div>
+    <div class="hero-ray" aria-hidden="true"></div>
+
     <div class="container">
       <div class="hero-content">
-        <div class="hero-tag">
-          <span>⭐</span> Auto Detailing Teenus · Tartumaa, Ulila
+
+        <div class="hero-tag" aria-label="Auto Detailing Tartumaal">
+          <div class="hero-tag-inner">
+            <div class="hero-tag-dot"></div>
+            Auto Detailing &nbsp;·&nbsp; Tartumaa, Ulila
+          </div>
         </div>
+
         <h1 class="hero-title">
-          Sinu auto.<br />
-          <span class="line2">Meie kirg.</span>
+          Sinu auto.<br/>
+          <span class="gold italic">Meie täpsus.</span>
         </h1>
+
         <p class="hero-desc">
-          RTG-Raidi Tuning Garage pakub professionaalset sõidukite iluhooldustust —
-          poleerimisest ja vahatamisest kuni luksuslike nahasisustuste ja
-          tähistaeva paigalduseni.
+          RTG-Raidi Tuning Garage — professionaalne sõidukite iluhooldus.
+          Poleerimisest ja nahkverhoilust kuni tähistaeva paigalduseni.
+          Töökoda asub Tartumaal Ulilas.
         </p>
+
         <div class="hero-btns">
-          <a href="#teenused" class="btn btn-primary">Vaata teenuseid &darr;</a>
-          <a href="#kontakt" class="btn btn-outline">Võta ühendust</a>
+          <a href="#teenused" class="btn btn-gold">Vaata teenuseid</a>
+          <a href="#kontakt" class="btn btn-ghost">Broneeri aeg</a>
         </div>
+
       </div>
     </div>
+
     <div class="hero-scroll" aria-hidden="true">
-      <span>Keri alla</span>
-      <svg width="16" height="24" viewBox="0 0 16 24" fill="none">
-        <rect x="0.5" y="0.5" width="15" height="23" rx="7.5" stroke="currentColor" stroke-opacity="0.5"/>
-        <circle cx="8" cy="8" r="2.5" fill="currentColor" opacity="0.6">
-          <animate attributeName="cy" values="8;15;8" dur="1.8s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0.6;0.1;0.6" dur="1.8s" repeatCount="indefinite"/>
+      <span>Keri</span>
+      <svg width="14" height="22" viewBox="0 0 14 22" fill="none">
+        <rect x=".5" y=".5" width="13" height="21" rx="6.5" stroke="currentColor" stroke-opacity=".4"/>
+        <circle cx="7" cy="7" r="2" fill="currentColor" opacity=".5">
+          <animate attributeName="cy" values="7;14;7" dur="2s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values=".5;.1;.5" dur="2s" repeatCount="indefinite"/>
         </circle>
       </svg>
     </div>
   </div>
 </section>
 
-<!-- ===== ABOUT ===== -->
-<section id="meist" aria-labelledby="about-heading">
-  <div id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-image-wrap reveal">
-          <img
-            src="images/interior-white-leather-front.jpg"
-            alt="Kvaliteetne nahksisustus – Audi valge nahk"
-            loading="lazy"
-          />
+<!-- ===== STATS BAR ===== -->
+<section id="stats-bar" aria-label="Statistika">
+  <div class="container">
+    <div class="stats-inner">
+      <div class="stat-item reveal d1">
+        <div class="stat-num">
+          <span class="counter" data-target="9" data-suffix="+">9+</span>
         </div>
-        <div class="about-text reveal reveal-delay-2">
-          <span class="section-label">Meist</span>
-          <h2 class="section-title" id="about-heading">
-            Kvaliteet, mida<br />näed ja tunned
-          </h2>
-          <div class="gold-divider"></div>
-          <br />
-          <p class="section-subtitle">
-            RTG tegeleb sõidukite iluhooldustega, milleks on poleerimine,
-            vahatamine, keemiline pesu, naha hooldus ja palju muud.
-            Töid teostame Tartumaal Ulilas.
-          </p>
-          <br />
-          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.8;">
-            Meie töökoda on varustatud professionaalsete vahenditega, et tagada
-            igale sõidukile parim tulemus. Kasutame ainult kvaliteetseid
-            materjale — olgu see siis itaalia nahk, fiber optika tähistaeva
-            jaoks või tippklassi autopoleerimisained.
-          </p>
-          <div class="about-stats">
-            <div class="stat-card reveal reveal-delay-1">
-              <span class="stat-number">9+</span>
-              <span class="stat-label">Erinevat teenust</span>
-            </div>
-            <div class="stat-card reveal reveal-delay-2">
-              <span class="stat-number">★★★</span>
-              <span class="stat-label">3 arvustust Facebookis</span>
-            </div>
-            <div class="stat-card reveal reveal-delay-3">
-              <span class="stat-number">100%</span>
-              <span class="stat-label">Rahulolu garantii</span>
-            </div>
-            <div class="stat-card reveal reveal-delay-4">
-              <span class="stat-number">BMW</span>
-              <span class="stat-label">Audi · VW · ja teised</span>
-            </div>
-          </div>
+        <div class="stat-label">Erinevat teenust</div>
+      </div>
+      <div class="stat-item reveal d2">
+        <div class="stat-num">
+          <span class="counter" data-target="100" data-suffix="%">100%</span>
         </div>
+        <div class="stat-label">Rahulolu</div>
+      </div>
+      <div class="stat-item reveal d3">
+        <div class="stat-num">★★★</div>
+        <div class="stat-label">Facebooki arvustused</div>
+      </div>
+      <div class="stat-item reveal d4">
+        <div class="stat-num">
+          <span class="counter" data-target="24" data-suffix="h">24h</span>
+        </div>
+        <div class="stat-label">Vastamisaeg</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== SERVICES ===== -->
-<section id="teenused" aria-labelledby="services-heading">
-  <div id="teenused-inner" style="padding: 100px 0; background: var(--bg);">
-    <div class="container">
-      <div class="services-header reveal">
-        <span class="section-label">Meie teenused</span>
-        <h2 class="section-title" id="services-heading">
-          Kõik, mida su auto vajab
+<!-- ===== MEIST ===== -->
+<section id="meist" aria-labelledby="about-h">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="about-image-stack reveal-left">
+        <div class="about-img-main">
+          <img src="images/interior-white-leather-front.jpg" alt="Valge nahkverhoilu — Audi esikabiin" loading="lazy"/>
+        </div>
+        <div class="about-img-accent">
+          <img src="images/starceil-teal.jpg" alt="Tähistaeva paigaldus" loading="lazy"/>
+        </div>
+        <div class="about-badge">
+          <strong>RTG</strong>
+          <span>Tartumaa · Ulila</span>
+        </div>
+      </div>
+
+      <div class="about-text reveal-right d2">
+        <div class="label">Meist</div>
+        <h2 class="section-title" id="about-h">
+          Kus <em>täpsus</em><br/>kohtub kirega
         </h2>
-        <div class="gold-divider" style="margin: 0 auto 20px;"></div>
-        <p class="section-subtitle">
-          Pakume täielikku sõiduki iluhooldusteenust — alates välispesu ja
-          poleerimisest kuni luksuslike sisustuslahenduste ja tähistaevani.
+        <div class="section-rule"></div>
+        <p class="section-body">
+          RTG tegeleb sõidukite iluhooldustega — poleerimine, vahatamine,
+          keemiline pesu, naha hooldus ja palju muud. Töid teostame
+          Tartumaal Ulilas.
         </p>
+        <p class="section-body" style="margin-top:14px">
+          Kasutame professionaalseid vahendeid ja kvaliteetseid materjale,
+          et anda igale sõidukile parim tulemus. BMW, Audi, Volkswagen
+          — iga mark on meile teretulnud.
+        </p>
+        <ul class="about-list">
+          <li>Itaalia nahk ja premium verhoilumaterjalid</li>
+          <li>Fiber-optiline tähistaeva süsteem</li>
+          <li>Keraamiline lakikiht — pikaaegne kaitse</li>
+          <li>Hooajal paadisõit Elva jõel</li>
+        </ul>
       </div>
 
-      <div class="services-grid">
-
-        <!-- 1. Poleerimine -->
-        <article class="service-card reveal reveal-delay-1">
-          <div class="service-card-img">
-            <img
-              src="images/exterior-bmw-black.jpg"
-              alt="Auto poleerimine – läikiv must BMW"
-              loading="lazy"
-            />
-          </div>
-          <div class="service-card-body">
-            <span class="service-icon">✨</span>
-            <h3 class="service-name">Poleerimine</h3>
-            <p class="service-desc">
-              Professionaalne masina- ja käsipoleerimine taastab su auto värvi
-              algse sügavuse ja läike. Sobib nii kergete kriimude eemaldamiseks
-              kui ka täieliku värskenduse jaoks.
-            </p>
-          </div>
-        </article>
-
-        <!-- 2. Vahatamine -->
-        <article class="service-card reveal reveal-delay-2">
-          <div class="service-card-no-img">🌟</div>
-          <div class="service-card-body">
-            <span class="service-icon">🛡️</span>
-            <h3 class="service-name">Vahatamine</h3>
-            <p class="service-desc">
-              Karnauuba- ja sünteetiline vaha loob kaitsekihi, mis tõrjub vett,
-              mustust ja UV-kiirgust — värvipind püsib kauem nagu uus.
-            </p>
-          </div>
-        </article>
-
-        <!-- 3. Keemiline pesu -->
-        <article class="service-card reveal reveal-delay-3">
-          <div class="service-card-no-img">🧴</div>
-          <div class="service-card-body">
-            <span class="service-icon">🚿</span>
-            <h3 class="service-name">Keemiline pesu</h3>
-            <p class="service-desc">
-              Sügav sise- ja välispesu eemaldab igapäevase mustuse, rasva ja
-              loomse päritoluga plekkide jäljed, nii välistelt pindadelt kui
-              ka salongist.
-            </p>
-          </div>
-        </article>
-
-        <!-- 4. Naha hooldus & verhoilu -->
-        <article class="service-card reveal reveal-delay-1">
-          <div class="service-card-img">
-            <img
-              src="images/interior-white-leather-rear.jpg"
-              alt="Nahksisustus – valge nahk tagaistmetel"
-              loading="lazy"
-            />
-          </div>
-          <div class="service-card-body">
-            <span class="service-icon">🪡</span>
-            <h3 class="service-name">Naha hooldus &amp; verhoilu</h3>
-            <p class="service-desc">
-              Naha puhastamine, niisutamine ja kaitsmine pikendab eluiga
-              märgatavalt. Pakume ka täielikku naha ümber-vooderdust —
-              valge, pruun, must või muud toonid teie soovil.
-            </p>
-          </div>
-        </article>
-
-        <!-- 5. Tähistaeva paigaldus -->
-        <article class="service-card reveal reveal-delay-2">
-          <div class="service-card-img">
-            <img
-              src="images/starceil-teal.jpg"
-              alt="Tähistaeva paigaldus – türkiis fiiberoptika"
-              loading="lazy"
-            />
-          </div>
-          <div class="service-card-body">
-            <span class="service-icon">🌌</span>
-            <h3 class="service-name">Tähistaeva paigaldus</h3>
-            <p class="service-desc">
-              Fiber-optilised tähistaevad muudavad su auto salongis lae
-              kauniks tähtedevaatluseks. Saadaval erinevates värvides ja
-              efektides — lase siseruumil hingata luksust.
-            </p>
-          </div>
-        </article>
-
-        <!-- 6. Esitulede restaureerimine -->
-        <article class="service-card reveal reveal-delay-3">
-          <div class="service-card-img">
-            <img
-              src="images/headlights-clean.jpg"
-              alt="Restaureeritud autoesituled"
-              loading="lazy"
-            />
-          </div>
-          <div class="service-card-body">
-            <span class="service-icon">💡</span>
-            <h3 class="service-name">Esitulede restaureerimine</h3>
-            <p class="service-desc">
-              Kollased ja kriimustunud tuleläätsed poleeritakse ja
-              kaetakse UV-kaitsekihiga, et taastada nende läbipaistvus
-              ja ohutu nähtavus. Müüme ka kasutatud tulesiid.
-            </p>
-          </div>
-        </article>
-
-        <!-- 7. Tuuleklaasi parandus -->
-        <article class="service-card reveal reveal-delay-1">
-          <div class="service-card-img">
-            <img
-              src="images/windscreen-repair.jpg"
-              alt="Tuuleklaasi kiiparandus"
-              loading="lazy"
-            />
-          </div>
-          <div class="service-card-body">
-            <span class="service-icon">🔍</span>
-            <h3 class="service-name">Tuuleklaasi parandus</h3>
-            <p class="service-desc">
-              Väikesed kivimid ja praod klaasil ei nõua täielikku vahetust.
-              Spetsiaalse vaikuga täitmine taastab tugevuse ja nähtavuse
-              kiiresti ning soodsalt.
-            </p>
-          </div>
-        </article>
-
-        <!-- 8. Põrandamatid -->
-        <article class="service-card reveal reveal-delay-2">
-          <div class="service-card-img">
-            <img
-              src="images/floormats-clean.jpg"
-              alt="Puhtad autoesituled põrandamatid"
-              loading="lazy"
-            />
-          </div>
-          <div class="service-card-body">
-            <span class="service-icon">🧹</span>
-            <h3 class="service-name">Põrandamatid</h3>
-            <p class="service-desc">
-              Sügavpuhastus auruga ja keemiliste vahenditega eemaldab isegi
-              sügavalt mattide kiududesse tunginud mustuse. Müüme ka
-              originaal- ja järelturu matte.
-            </p>
-          </div>
-        </article>
-
-        <!-- 9. Katusekatise vahetus -->
-        <article class="service-card reveal reveal-delay-3">
-          <div class="service-card-img">
-            <img
-              src="images/headliner.jpg"
-              alt="Katusekatise vahetus – sisemine lagi"
-              loading="lazy"
-            />
-          </div>
-          <div class="service-card-body">
-            <span class="service-icon">🏗️</span>
-            <h3 class="service-name">Katusekatise vahetus</h3>
-            <p class="service-desc">
-              Rippuv, plekkiline või kulunud laekate (headliner) vahetatakse
-              uue vastu — tulemuseks on puhas, nagu uus salongilaed.
-              Saadaval erinevad materjalid ja värvid.
-            </p>
-          </div>
-        </article>
-
-      </div>
     </div>
   </div>
 </section>
 
-<!-- ===== GALLERY ===== -->
-<section id="galerii" aria-labelledby="gallery-heading">
-  <div id="galerii-inner" style="padding: 100px 0; background: var(--bg-section);">
-    <div class="container">
-      <div class="gallery-header reveal">
-        <span class="section-label">Portfoolio</span>
-        <h2 class="section-title" id="gallery-heading">Meie tööd</h2>
-        <div class="gold-divider" style="margin-bottom: 32px;"></div>
+<!-- ===== TEENUSED ===== -->
+<section id="teenused" aria-labelledby="svc-h">
+  <div class="container">
+    <div class="services-head reveal">
+      <div>
+        <div class="label">Meie teenused</div>
+        <h2 class="section-title" id="svc-h">Kõik, mida<br/><em>sinu auto vajab</em></h2>
+      </div>
+      <div class="services-count" aria-hidden="true">09</div>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- 01 -->
+      <article class="svc-card reveal d1">
+        <span class="svc-num">01</span>
+        <span class="svc-icon">✨</span>
+        <h3 class="svc-name">Poleerimine</h3>
+        <p class="svc-desc">Masinapoleerimine taastab värvi sügavuse ja eemaldab kriimud ning happevihma jäljed. Tulemus — peegelläige.</p>
+        <div class="svc-img"><img src="images/exterior-bmw-black.jpg" alt="Poleeritud BMW" loading="lazy"/></div>
+      </article>
+
+      <!-- 02 -->
+      <article class="svc-card reveal d2">
+        <span class="svc-num">02</span>
+        <span class="svc-icon">🛡️</span>
+        <h3 class="svc-name">Vahatamine</h3>
+        <p class="svc-desc">Karnauuba- või keraamiline vaha kaitseb värvi UV-kiirguse, vee ja mustuse eest — pikendab poleerimise tulemust.</p>
+      </article>
+
+      <!-- 03 -->
+      <article class="svc-card reveal d3">
+        <span class="svc-num">03</span>
+        <span class="svc-icon">🚿</span>
+        <h3 class="svc-name">Keemiline pesu</h3>
+        <p class="svc-desc">Sügav sise- ja välispesu eemaldab igapäevase mustuse, rasva ja plekkide jäljed — nii välistelt pindadelt kui salongist.</p>
+      </article>
+
+      <!-- 04 -->
+      <article class="svc-card reveal d1">
+        <span class="svc-num">04</span>
+        <span class="svc-icon">🪡</span>
+        <h3 class="svc-name">Naha hooldus &amp; verhoilu</h3>
+        <p class="svc-desc">Naha puhastamine, niisutamine ja ümberverhoilu — valge, pruun, must või muud toonid teie soovil.</p>
+        <div class="svc-img"><img src="images/interior-white-leather-rear.jpg" alt="Nahkverhoilu" loading="lazy"/></div>
+      </article>
+
+      <!-- 05 -->
+      <article class="svc-card reveal d2">
+        <span class="svc-num">05</span>
+        <span class="svc-icon">🌌</span>
+        <h3 class="svc-name">Tähistaeva paigaldus</h3>
+        <p class="svc-desc">Fiber-optiline tähistaevas muudab salongis lae universumiks. Saadaval eri värvid ja efektid.</p>
+        <div class="svc-img"><img src="images/starceil-purple.jpg" alt="Tähistaevas" loading="lazy"/></div>
+      </article>
+
+      <!-- 06 -->
+      <article class="svc-card reveal d3">
+        <span class="svc-num">06</span>
+        <span class="svc-icon">💡</span>
+        <h3 class="svc-name">Esitulede restaureerimine</h3>
+        <p class="svc-desc">Kollased läätsed poleeritakse ja kaetakse UV-kihiga — taastame läbipaistvuse ja ohutu nähtavuse.</p>
+        <div class="svc-img"><img src="images/headlights-clean.jpg" alt="Restaureeritud esituled" loading="lazy"/></div>
+      </article>
+
+      <!-- 07 -->
+      <article class="svc-card reveal d1">
+        <span class="svc-num">07</span>
+        <span class="svc-icon">🔍</span>
+        <h3 class="svc-name">Tuuleklaasi parandus</h3>
+        <p class="svc-desc">Kivimite löödud praod täidetakse spetsiaalse vaikuga — kiire ja soodne alternatiiv täielikule vahetusele.</p>
+        <div class="svc-img"><img src="images/windscreen-repair.jpg" alt="Klaasi parandus" loading="lazy"/></div>
+      </article>
+
+      <!-- 08 -->
+      <article class="svc-card reveal d2">
+        <span class="svc-num">08</span>
+        <span class="svc-icon">🧹</span>
+        <h3 class="svc-name">Põrandamatid</h3>
+        <p class="svc-desc">Sügavpuhastus auruga eemaldab sügavalt mattide kiududesse tunginud mustuse. Müüme ka originaal- ja järelturu matte.</p>
+        <div class="svc-img"><img src="images/floormats-clean.jpg" alt="Puhtad matid" loading="lazy"/></div>
+      </article>
+
+      <!-- 09 -->
+      <article class="svc-card reveal d3">
+        <span class="svc-num">09</span>
+        <span class="svc-icon">🏗️</span>
+        <h3 class="svc-name">Katusekatise vahetus</h3>
+        <p class="svc-desc">Rippuv või plekkiline laekate vahetatakse uuega — puhas, nagu uus salongilaed. Eri materjalid ja värvid.</p>
+        <div class="svc-img"><img src="images/headliner.jpg" alt="Katusekatise vahetus" loading="lazy"/></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== BEFORE / AFTER ===== -->
+<section id="before-after" aria-labelledby="ba-h">
+  <div class="container">
+    <div class="ba-section-head reveal">
+      <div class="label">Tulemus räägib ise</div>
+      <h2 class="section-title" id="ba-h">Enne &amp; <em>pärast</em></h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="ba-grid">
+
+      <!-- Slider 1: Floor mats -->
+      <div class="ba-wrap reveal d1">
+        <div class="ba-slider" role="img" aria-label="Põrandamatid enne ja pärast puhastust">
+          <div class="ba-after">
+            <img src="images/floormats-clean.jpg" alt="Matid pärast"/>
+          </div>
+          <div class="ba-before">
+            <img src="images/floormats-dirty.jpg" alt="Matid enne"/>
+          </div>
+          <div class="ba-handle" aria-hidden="true"></div>
+        </div>
+        <div class="ba-caption">
+          <div class="ba-labels">
+            <span class="ba-label-before">Enne</span>
+            <span class="ba-label-after">Pärast</span>
+          </div>
+          <div class="ba-title">Põrandamatide puhastus</div>
+        </div>
       </div>
 
-      <div class="gallery-filters reveal">
-        <button class="filter-btn active" data-filter="all">Kõik tööd</button>
+      <!-- Slider 2: Headlights -->
+      <div class="ba-wrap reveal d2">
+        <div class="ba-slider" role="img" aria-label="Esituled enne ja pärast restaureerimist">
+          <div class="ba-after">
+            <img src="images/headlights-clean.jpg" alt="Esituled pärast"/>
+          </div>
+          <div class="ba-before">
+            <img src="images/headlights-old.jpg" alt="Esituled enne"/>
+          </div>
+          <div class="ba-handle" aria-hidden="true"></div>
+        </div>
+        <div class="ba-caption">
+          <div class="ba-labels">
+            <span class="ba-label-before">Enne</span>
+            <span class="ba-label-after">Pärast</span>
+          </div>
+          <div class="ba-title">Esitulede restaureerimine</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALERII ===== -->
+<section id="galerii" aria-labelledby="gal-h">
+  <div class="container">
+    <div class="gallery-head reveal">
+      <div>
+        <div class="label">Portfoolio</div>
+        <h2 class="section-title" id="gal-h">Meie <em>tööd</em></h2>
+        <div class="section-rule"></div>
+      </div>
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">Kõik</button>
         <button class="filter-btn" data-filter="sisemus">Sisemus</button>
         <button class="filter-btn" data-filter="tahistaevas">Tähistaevas</button>
         <button class="filter-btn" data-filter="valispind">Välispind</button>
-        <button class="filter-btn" data-filter="osad">Osad &amp; detailid</button>
+        <button class="filter-btn" data-filter="osad">Detailid</button>
       </div>
+    </div>
 
-      <div class="gallery-grid">
-
-        <div class="gallery-item" data-cat="sisemus">
-          <img src="images/interior-white-leather-front.jpg" alt="Valge nahk – esistmed Audi" loading="lazy" />
-          <div class="gallery-overlay">🔍</div>
-        </div>
-
-        <div class="gallery-item" data-cat="sisemus">
-          <img src="images/interior-white-leather-rear.jpg" alt="Valge nahk – tagaistmed" loading="lazy" />
-          <div class="gallery-overlay">🔍</div>
-        </div>
-
-        <div class="gallery-item" data-cat="tahistaevas">
-          <img src="images/starceil-teal.jpg" alt="Tähistaevas türkiis" loading="lazy" />
-          <div class="gallery-overlay">🔍</div>
-        </div>
-
-        <div class="gallery-item" data-cat="valispind">
-          <img src="images/hero-bmw-garage.jpg" alt="BMW garaaž RTG" loading="lazy" />
-          <div class="gallery-overlay">🔍</div>
-        </div>
-
-        <div class="gallery-item" data-cat="tahistaevas">
-          <img src="images/starceil-purple.jpg" alt="Tähistaevas lilla" loading="lazy" />
-          <div class="gallery-overlay">🔍</div>
-        </div>
-
-        <div class="gallery-item" data-cat="sisemus">
-          <img src="images/interior-bmw-brown.jpg" alt="BMW pruun nahksisustus" loading="lazy" />
-          <div class="gallery-overlay">🔍</div>
-        </div>
-
-        <div class="gallery-item" data-cat="sisemus">
-          <img src="images/leather-before-after.jpg" alt="Naha hooldus – enne ja pärast" loading="lazy" />
-          <div class="gallery-overlay">🔍</div>
-        </div>
-
-        <div class="gallery-item" data-cat="valispind">
-          <img src="images/exterior-bmw-black.jpg" alt="Poleeritud must BMW" loading="lazy" />
-          <div class="gallery-overlay">🔍</div>
-        </div>
-
-        <div class="gallery-item" data-cat="valispind">
-          <img src="images/bmw-gt-side.jpg" alt="BMW GT külg poleeritud" loading="lazy" />
-          <div class="gallery-overlay">🔍</div>
-        </div>
-
-        <div class="gallery-item" data-cat="valispind">
-          <img src="images/bmw-gt-rear.jpg" alt="BMW GT taga – RTG" loading="lazy" />
-          <div class="gallery-overlay">🔍</div>
-        </div>
-
-        <div class="gallery-item" data-cat="valispind">
-          <img src="images/bmw-side2.jpg" alt="BMW külg läige" loading="lazy" />
-          <div class="gallery-overlay">🔍</div>
-        </div>
-
-        <div class="gallery-item" data-cat="valispind">
-          <img src="images/bmw-side3.jpg" alt="BMW välispind XDrive" loading="lazy" />
-          <div class="gallery-overlay">🔍</div>
-        </div>
-
-        <div class="gallery-item" data-cat="osad">
-          <img src="images/headlights-clean.jpg" alt="Restaureeritud esituled" loading="lazy" />
-          <div class="gallery-overlay">🔍</div>
-        </div>
-
-        <div class="gallery-item" data-cat="osad">
-          <img src="images/headlights-old.jpg" alt="Vanad esituled enne restaureerimist" loading="lazy" />
-          <div class="gallery-overlay">🔍</div>
-        </div>
-
-        <div class="gallery-item" data-cat="osad">
-          <img src="images/headliner.jpg" alt="Katusekatise vahetus" loading="lazy" />
-          <div class="gallery-overlay">🔍</div>
-        </div>
-
-        <div class="gallery-item" data-cat="osad">
-          <img src="images/floormats-dirty.jpg" alt="Põrandamatid enne puhastust" loading="lazy" />
-          <div class="gallery-overlay">🔍</div>
-        </div>
-
-        <div class="gallery-item" data-cat="osad">
-          <img src="images/floormats-clean.jpg" alt="Põrandamatid pärast puhastust" loading="lazy" />
-          <div class="gallery-overlay">🔍</div>
-        </div>
-
-        <div class="gallery-item" data-cat="osad">
-          <img src="images/windscreen-repair.jpg" alt="Tuuleklaasi parandus" loading="lazy" />
-          <div class="gallery-overlay">🔍</div>
-        </div>
-
-        <div class="gallery-item" data-cat="sisemus">
-          <img src="images/armrest-detail.jpg" alt="Käetugi detail" loading="lazy" />
-          <div class="gallery-overlay">🔍</div>
-        </div>
-
-        <div class="gallery-item" data-cat="valispind">
-          <img src="images/bmw-door.jpg" alt="BMW ukseseade poleeritud" loading="lazy" />
-          <div class="gallery-overlay">🔍</div>
-        </div>
-
+    <div class="gallery-grid">
+      <div class="gallery-item" data-cat="sisemus">
+        <img src="images/interior-white-leather-front.jpg" alt="Valge nahk — Audi" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="tahistaevas">
+        <img src="images/starceil-teal.jpg" alt="Tähistaevas türkiis" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="valispind">
+        <img src="images/hero-bmw-garage.jpg" alt="BMW garaaž RTG" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="sisemus">
+        <img src="images/interior-white-leather-rear.jpg" alt="Valge nahk — tagaistmed" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="tahistaevas">
+        <img src="images/starceil-purple.jpg" alt="Tähistaevas lilla" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="sisemus">
+        <img src="images/interior-bmw-brown.jpg" alt="BMW pruun nahk" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="sisemus">
+        <img src="images/leather-before-after.jpg" alt="Naha restaureerimine" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="valispind">
+        <img src="images/exterior-bmw-black.jpg" alt="Poleeritud BMW" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="valispind">
+        <img src="images/bmw-gt-rear.jpg" alt="BMW GT taga" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="valispind">
+        <img src="images/bmw-gt-side.jpg" alt="BMW GT külg" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="osad">
+        <img src="images/headlights-clean.jpg" alt="Restaureeritud esituled" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="osad">
+        <img src="images/headliner.jpg" alt="Katusekatise vahetus" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="osad">
+        <img src="images/floormats-clean.jpg" alt="Puhtad matid" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="osad">
+        <img src="images/windscreen-repair.jpg" alt="Klaasi parandus" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="valispind">
+        <img src="images/bmw-side2.jpg" alt="BMW välispind" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="sisemus">
+        <img src="images/armrest-detail.jpg" alt="Käetugi detail" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="valispind">
+        <img src="images/bmw-side3.jpg" alt="BMW xDrive" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="valispind">
+        <img src="images/bmw-door.jpg" alt="BMW ukse detail" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ===== LIGHTBOX ===== -->
-<div id="lightbox" role="dialog" aria-label="Galerii suurendus" aria-modal="true">
-  <button class="lightbox-close" aria-label="Sulge">&times;</button>
-  <button class="lightbox-prev" aria-label="Eelmine">&#8249;</button>
-  <img class="lightbox-img" src="" alt="Galerii foto" />
-  <button class="lightbox-next" aria-label="Järgmine">&#8250;</button>
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Foto suurendus">
+  <button class="lb-close" aria-label="Sulge">✕</button>
+  <button class="lb-prev" aria-label="Eelmine">&#8249;</button>
+  <img class="lb-img" src="" alt="Galerii foto"/>
+  <button class="lb-next" aria-label="Järgmine">&#8250;</button>
 </div>
 
 <!-- ===== BOAT PERK ===== -->
-<section id="boonus" aria-labelledby="boonus-heading">
+<section id="boonus" aria-labelledby="boonus-h">
+  <div class="boonus-glow" aria-hidden="true"></div>
   <div class="container">
-    <div class="boonus-inner">
-      <div class="boonus-text reveal">
-        <span class="section-label">Ainulaadne boonus</span>
-        <h2 class="section-title" id="boonus-heading">
-          Naudi loodust, kuni<br />meie su autoga tegeleme
+    <div class="boonus-grid">
+
+      <div class="boonus-text reveal-left">
+        <div class="label">Ainulaadne boonus</div>
+        <h2 class="section-title" id="boonus-h">
+          Naudi loodust,<br/>kuni meie <em>töötame</em>
         </h2>
-        <div class="gold-divider"></div>
-        <br />
-        <p class="section-subtitle">
+        <div class="section-rule"></div>
+        <p class="section-body">
           Hooajal saad Elva jõel paadisõitu nautida, kuni meie su autoga
-          tegeleme. Jäta auto meie hoolde ja puhka — tule tagasi täiusliku
-          sõiduki juurde.
+          tegeleme. Jäta auto meie hoolde ja naudi Tartumaa loodust.
         </p>
-        <br />
         <div class="boonus-features">
-          <div class="boonus-feature reveal reveal-delay-1">
-            <span class="boonus-feature-icon">⛵</span>
-            <div class="boonus-feature-text">
+          <div class="boonus-feat">
+            <span class="boonus-feat-ico">⛵</span>
+            <div class="boonus-feat-body">
               <strong>Tasuta paadisõit</strong>
-              <span>Elva jõel hooajal meie paadiga — päris tasuta</span>
+              <span>Elva jõel meie paadiga — hooajal tasuta</span>
             </div>
           </div>
-          <div class="boonus-feature reveal reveal-delay-2">
-            <span class="boonus-feature-icon">🌿</span>
-            <div class="boonus-feature-text">
-              <strong>Looduskaunis Elva piirkond</strong>
-              <span>Tartumaa parimates rohelistes ümbruses</span>
+          <div class="boonus-feat">
+            <span class="boonus-feat-ico">🌿</span>
+            <div class="boonus-feat-body">
+              <strong>Tartumaa loodus</strong>
+              <span>Kauneim looduskeskkond ootab sind</span>
             </div>
           </div>
-          <div class="boonus-feature reveal reveal-delay-3">
-            <span class="boonus-feature-icon">🚗</span>
-            <div class="boonus-feature-text">
-              <strong>Auto saab täiusliku hoolduse</strong>
-              <span>Kõik teenused samaaegselt — säästab su aega</span>
+          <div class="boonus-feat">
+            <span class="boonus-feat-ico">🚗</span>
+            <div class="boonus-feat-body">
+              <strong>Auto saab täiusliku hoolitsuse</strong>
+              <span>Kõik teenused samaaegselt — säästab aega</span>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="boonus-image-wrap reveal reveal-delay-2">
-        <img
-          src="images/starceil-teal.jpg"
-          alt="Tähistaevas RTG Tuning Garages"
-          loading="lazy"
-        />
+      <div class="boonus-visual reveal-right d2">
+        <div class="boonus-img-wrap">
+          <img src="images/exterior-bmw-black.jpg" alt="Poleeritud sõiduk RTG hoolduse järel" loading="lazy"/>
+        </div>
         <div class="boonus-badge">
-          <strong>⛵ Hooaegadel saadaval</strong>
-          <span>Elva jõel · Tartumaa</span>
+          <strong>⛵ Elva jõel</strong>
+          <span>Hooajal · Tartumaa</span>
         </div>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- ===== CONTACT ===== -->
-<section id="kontakt" aria-labelledby="contact-heading">
-  <div id="kontakt-inner" style="padding: 100px 0; background: var(--bg-section);">
-    <div class="container">
-      <div class="contact-grid">
-        <div>
-          <span class="section-label reveal">Kontakt</span>
-          <h2 class="section-title reveal" id="contact-heading">
-            Broneeri aeg<br />või küsi hinnapakkumist
-          </h2>
-          <div class="gold-divider reveal"></div>
-          <p class="section-subtitle reveal" style="margin-top: 20px;">
-            Võta meiega ühendust telefoni teel või Facebooki Messengeri
-            kaudu — vastame kiiresti.
-          </p>
+<!-- ===== KONTAKT ===== -->
+<section id="kontakt" aria-labelledby="kontakt-h">
+  <div class="container">
+    <div class="contact-grid">
 
-          <div class="contact-cards">
-            <a href="tel:58603353" class="contact-card reveal reveal-delay-1">
-              <div class="contact-card-icon">📞</div>
-              <div class="contact-card-text">
-                <strong>Telefon</strong>
-                <span>5860 3353</span>
-              </div>
-            </a>
+      <div class="contact-text">
+        <div class="label reveal">Kontakt</div>
+        <h2 class="section-title reveal d1" id="kontakt-h">
+          Broneeri aeg<br/>või küsi <em>hinnapakkumist</em>
+        </h2>
+        <div class="section-rule reveal d2"></div>
+        <p class="section-body reveal d2" style="margin-top:20px">
+          Võta meiega ühendust telefoni teel või Facebooki Messengeri
+          kaudu — vastame kiiresti ja leiame sulle parima aja.
+        </p>
 
-            <a
-              href="https://www.facebook.com/share/1JnikZ6SPM/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="contact-card reveal reveal-delay-2"
-            >
-              <div class="contact-card-icon">💬</div>
-              <div class="contact-card-text">
-                <strong>Facebook Messenger</strong>
-                <span>RTG-Raidi Tuning Garage</span>
-              </div>
-            </a>
+        <div class="contact-cards">
+          <a href="tel:58603353" class="contact-card reveal d3">
+            <div class="cc-icon">📞</div>
+            <div>
+              <span class="cc-label">Telefon</span>
+              <span class="cc-value">5860 3353</span>
+            </div>
+          </a>
 
-            <div class="contact-card reveal reveal-delay-3" style="cursor: default;">
-              <div class="contact-card-icon">📍</div>
-              <div class="contact-card-text">
-                <strong>Asukoht</strong>
-                <span>Ulila, Tartumaa, Eesti</span>
-              </div>
+          <a href="https://www.facebook.com/share/1JnikZ6SPM/"
+             target="_blank" rel="noopener noreferrer"
+             class="contact-card reveal d4">
+            <div class="cc-icon">💬</div>
+            <div>
+              <span class="cc-label">Facebook Messenger</span>
+              <span class="cc-value">RTG-Raidi Tuning Garage</span>
+            </div>
+          </a>
+
+          <div class="contact-card reveal d5">
+            <div class="cc-icon">📍</div>
+            <div>
+              <span class="cc-label">Asukoht</span>
+              <span class="cc-value">Ulila, Tartumaa, Eesti</span>
             </div>
           </div>
         </div>
-
-        <div class="map-wrap reveal reveal-delay-2">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8484.123!2d26.957!3d58.268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb3d7c4e6f2e4d%3A0x1234567890abcdef!2sUlila%2C%20Tartumaa%2C%20Eesti!5e0!3m2!1set!2see!4v1700000000000!5m2!1set!2see"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="RTG-Raidi Tuning Garage asukoht Ulilas"
-          ></iframe>
-        </div>
       </div>
+
+      <div class="map-wrap reveal-right d2">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2087.5!2d26.957!3d58.268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb3d7c4e6f2e4d%3A0x1!2sUlila%2C%20Tartumaa!5e0!3m2!1set!2see!4v1700000000000"
+          allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="RTG-Raidi Tuning Garage asukoht Ulilas, Tartumaal">
+        </iframe>
+      </div>
+
     </div>
   </div>
 </section>
@@ -589,32 +551,40 @@
 <!-- ===== FOOTER ===== -->
 <footer>
   <div class="container">
-    <div class="footer-inner">
-      <div>
-        <div class="footer-logo">
-          <div class="logo-icon" aria-hidden="true">🔧</div>
-          <span><span class="accent">RTG</span>-Raidi Tuning Garage</span>
-        </div>
-        <p class="footer-tagline">Auto Detailing Teenus · Ulila, Tartumaa</p>
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <img class="footer-logo-img" src="images/rtg-logo.jpg" alt="RTG-Raidi Tuning Garage"/>
+        <p class="footer-tagline">Auto Detailing · Ulila, Tartumaa, Eesti</p>
       </div>
 
-      <nav class="footer-links" aria-label="Jaluse navigatsioon">
+      <nav class="footer-nav" aria-label="Jaluse navigatsioon">
         <a href="#avaleht">Avaleht</a>
+        <a href="#meist">Meist</a>
         <a href="#teenused">Teenused</a>
         <a href="#galerii">Galerii</a>
         <a href="#kontakt">Kontakt</a>
-        <a
-          href="https://www.facebook.com/share/1JnikZ6SPM/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Facebook"
-        >Facebook</a>
       </nav>
+
+      <div class="footer-contact">
+        <p><a href="tel:58603353">5860 3353</a></p>
+        <p>Ulila, Tartumaa</p>
+        <p style="margin-top:12px">
+          <a href="https://www.facebook.com/share/1JnikZ6SPM/"
+             target="_blank" rel="noopener noreferrer">
+            Facebook →
+          </a>
+        </p>
+      </div>
+
     </div>
 
-    <p class="footer-copy">
-      &copy; 2025 RTG-Raidi Tuning Garage. Kõik õigused kaitstud.
-    </p>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2025 RTG-Raidi Tuning Garage. Kõik õigused kaitstud.</p>
+      <a href="https://www.facebook.com/share/1JnikZ6SPM/"
+         target="_blank" rel="noopener noreferrer"
+         class="footer-fb">Facebook</a>
+    </div>
   </div>
 </footer>
 
