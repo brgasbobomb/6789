@@ -275,7 +275,7 @@ button{cursor:pointer;font-family:inherit}
 /* Background layers */
 .hero-bg{
   position:absolute;inset:0;
-  background:url('images/hero-bmw-garage.jpg') center/cover no-repeat;
+  background:url('images/audi-black-hexa.jpg') center/cover no-repeat;
   transform:scale(1.08);
 }
 .hero-overlay{
@@ -1299,10 +1299,12 @@ footer{
   background:#000a14;
   overflow:hidden;
 }
-.video-embed-wrap iframe{
+.video-embed-wrap iframe,
+.video-embed-wrap video{
   position:absolute;inset:0;
   width:100%;height:100%;
   border:none;
+  object-fit:cover;
 }
 
 /* Placeholder shown before iframe is set */
