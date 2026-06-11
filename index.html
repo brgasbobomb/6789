@@ -9,7 +9,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Montserrat:wght@400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Montserrat:wght@400;600;700&family=Inter:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
 
   <link rel="stylesheet" href="style.css"/>
 </head>
@@ -21,6 +21,9 @@
   <a href="#meist">Meist</a>
   <a href="#teenused">Teenused</a>
   <a href="#galerii">Galerii</a>
+  <a href="#blogi">Tööpäevik</a>
+  <a href="#video">Video</a>
+  <a href="#boonus">Boonus</a>
   <a href="#kontakt" class="btn btn-gold">Broneeri aeg</a>
 </div>
 
@@ -40,6 +43,8 @@
       <a href="#meist">Meist</a>
       <a href="#teenused">Teenused</a>
       <a href="#galerii">Galerii</a>
+      <a href="#blogi">Tööpäevik</a>
+      <a href="#video">Video</a>
       <a href="#boonus">Boonus</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
@@ -62,6 +67,8 @@
     <div class="hero-overlay"></div>
     <div class="hero-scan" aria-hidden="true"></div>
     <div class="hero-ray" aria-hidden="true"></div>
+    <div class="hero-corridor" aria-hidden="true"></div>
+    <div class="hero-fluorescent" aria-hidden="true"></div>
 
     <div class="container">
       <div class="hero-content">
@@ -107,26 +114,33 @@
 
 <!-- ===== STATS BAR ===== -->
 <section id="stats-bar" aria-label="Statistika">
+  <div class="stats-terminal-header" aria-hidden="true">
+    <span class="terminal-tag">LUMON VERIFIED</span>
+    <span class="terminal-sep">///</span>
+    <span class="terminal-tag">RTG-RAIDI TUNING GARAGE</span>
+    <span class="terminal-sep">///</span>
+    <span class="terminal-tag">ULILA, TARTUMAA</span>
+  </div>
   <div class="container">
     <div class="stats-inner">
       <div class="stat-item reveal d1">
-        <div class="stat-num">
+        <div class="stat-num terminal-num">
           <span class="counter" data-target="9" data-suffix="+">9+</span>
         </div>
         <div class="stat-label">Erinevat teenust</div>
       </div>
       <div class="stat-item reveal d2">
-        <div class="stat-num">
+        <div class="stat-num terminal-num">
           <span class="counter" data-target="100" data-suffix="%">100%</span>
         </div>
         <div class="stat-label">Rahulolu</div>
       </div>
       <div class="stat-item reveal d3">
-        <div class="stat-num">★★★</div>
+        <div class="stat-num terminal-num">★★★</div>
         <div class="stat-label">Facebooki arvustused</div>
       </div>
       <div class="stat-item reveal d4">
-        <div class="stat-num">
+        <div class="stat-num terminal-num">
           <span class="counter" data-target="24" data-suffix="h">24h</span>
         </div>
         <div class="stat-label">Vastamisaeg</div>
@@ -134,6 +148,17 @@
     </div>
   </div>
 </section>
+
+<!-- ===== CORRIDOR DIVIDER ===== -->
+<div class="corridor-divider" aria-hidden="true">
+  <div class="corridor-inner">
+    <span class="corridor-code">RTG</span>
+    <div class="corridor-line"></div>
+    <span class="corridor-dept">[ DETAILIMINE &amp; RESTAUREERIMINE ]</span>
+    <div class="corridor-line"></div>
+    <span class="corridor-code">ULI</span>
+  </div>
+</div>
 
 <!-- ===== MEIST ===== -->
 <section id="meist" aria-labelledby="about-h">
@@ -423,6 +448,26 @@
         <img src="images/bmw-door.jpg" alt="BMW ukse detail" loading="lazy"/>
         <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
       </div>
+      <div class="gallery-item" data-cat="sisemus">
+        <img src="images/interior-bmw-brown.jpg" alt="BMW pruun sisemus" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="osad">
+        <img src="images/floormats-dirty.jpg" alt="Matid enne puhastust" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="osad">
+        <img src="images/headlights-old.jpg" alt="Esituled enne restaureerimist" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="sisemus">
+        <img src="images/interior-white-leather-rear.jpg" alt="Valge nahk tagaistmed" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="valispind">
+        <img src="images/hero-bmw-garage.jpg" alt="RTG garaaž" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
     </div>
   </div>
 </section>
@@ -434,6 +479,171 @@
   <img class="lb-img" src="" alt="Galerii foto"/>
   <button class="lb-next" aria-label="Järgmine">&#8250;</button>
 </div>
+
+<!-- ===== BLOG / TÖÖPÄEVIK ===== -->
+<section id="blogi" aria-labelledby="blogi-h">
+  <div class="blogi-fluorescent" aria-hidden="true"></div>
+  <div class="container">
+    <div class="blogi-head reveal">
+      <div>
+        <div class="label dept-label">[ TÖÖPÄEVIK ]</div>
+        <h2 class="section-title" id="blogi-h">Töö<em>logi</em></h2>
+        <div class="section-rule"></div>
+        <p class="section-body" style="margin-top:18px">
+          Dokumenteeritud töid — iga sõiduk on uus väljakutse.
+        </p>
+      </div>
+      <div class="blogi-terminal-id" aria-hidden="true">
+        <span class="terminal-file-id">TÖÖDOKUMENDID</span>
+        <span class="terminal-file-sub">RTG / DETAILING DIVISION</span>
+      </div>
+    </div>
+
+    <div class="blogi-scroll-wrap">
+      <div class="blogi-track">
+
+        <!-- WF-001 -->
+        <article class="work-file reveal d1">
+          <div class="wf-header">
+            <span class="wf-num">WF-001</span>
+            <span class="wf-status wf-done">LÕPETATUD</span>
+          </div>
+          <div class="wf-img">
+            <img src="images/leather-before-after.jpg" alt="Naha restaureerimine" loading="lazy"/>
+          </div>
+          <div class="wf-body">
+            <div class="wf-date">2025 · SISEMUS</div>
+            <h3 class="wf-title">Naha restaureerimine</h3>
+            <p class="wf-desc">Täielik naha puhastamine, niisutamine ja ümberverhoilu. Materjal: Itaalia nahk. Toon: valge.</p>
+          </div>
+        </article>
+
+        <!-- WF-002 -->
+        <article class="work-file reveal d2">
+          <div class="wf-header">
+            <span class="wf-num">WF-002</span>
+            <span class="wf-status wf-done">LÕPETATUD</span>
+          </div>
+          <div class="wf-img">
+            <img src="images/exterior-bmw-black.jpg" alt="BMW eksterjer poleerimine" loading="lazy"/>
+          </div>
+          <div class="wf-body">
+            <div class="wf-date">2025 · VÄLISPIND</div>
+            <h3 class="wf-title">BMW eksterjer</h3>
+            <p class="wf-desc">Masinapoleerimine + keraamiline vahakiht. Kriimud eemaldatud. Tulemus: peegelläige.</p>
+          </div>
+        </article>
+
+        <!-- WF-003 -->
+        <article class="work-file reveal d3">
+          <div class="wf-header">
+            <span class="wf-num">WF-003</span>
+            <span class="wf-status wf-done">LÕPETATUD</span>
+          </div>
+          <div class="wf-img">
+            <img src="images/starceil-purple.jpg" alt="Tähistaevas paigaldus" loading="lazy"/>
+          </div>
+          <div class="wf-body">
+            <div class="wf-date">2025 · TÄHISTAEVAS</div>
+            <h3 class="wf-title">Fiber-optiline tähistaevas</h3>
+            <p class="wf-desc">Lilla RGB tähistaevas — 600 kiudu. Efektid: vilkumine, värvivahetus, tähelangemine.</p>
+          </div>
+        </article>
+
+        <!-- WF-004 -->
+        <article class="work-file reveal d1">
+          <div class="wf-header">
+            <span class="wf-num">WF-004</span>
+            <span class="wf-status wf-done">LÕPETATUD</span>
+          </div>
+          <div class="wf-img">
+            <img src="images/headlights-clean.jpg" alt="Esitulede restaureerimine" loading="lazy"/>
+          </div>
+          <div class="wf-body">
+            <div class="wf-date">2025 · OSAD</div>
+            <h3 class="wf-title">Esitulede restaureerimine</h3>
+            <p class="wf-desc">Kollased läätsed poleeritud. UV-kaitsekiht kantud. Läbipaistvus taastatud.</p>
+          </div>
+        </article>
+
+        <!-- WF-005 -->
+        <article class="work-file reveal d2">
+          <div class="wf-header">
+            <span class="wf-num">WF-005</span>
+            <span class="wf-status wf-done">LÕPETATUD</span>
+          </div>
+          <div class="wf-img">
+            <img src="images/interior-white-leather-front.jpg" alt="Valge nahkverhoilu" loading="lazy"/>
+          </div>
+          <div class="wf-body">
+            <div class="wf-date">2025 · SISEMUS</div>
+            <h3 class="wf-title">Valge nahkverhoilu — Audi</h3>
+            <p class="wf-desc">Premium valge nahk. Käsitöö õmblused. Audi A6 täielik verhoilu — esi- ja tagaistmed.</p>
+          </div>
+        </article>
+
+        <!-- WF-006 -->
+        <article class="work-file reveal d3">
+          <div class="wf-header">
+            <span class="wf-num">WF-006</span>
+            <span class="wf-status wf-done">LÕPETATUD</span>
+          </div>
+          <div class="wf-img">
+            <img src="images/starceil-teal.jpg" alt="Türkiis tähistaevas" loading="lazy"/>
+          </div>
+          <div class="wf-body">
+            <div class="wf-date">2025 · TÄHISTAEVAS</div>
+            <h3 class="wf-title">Türkiis tähistaevas</h3>
+            <p class="wf-desc">Türkiis RGB tähistaevas soovitud toonidega. Paigaldus 4h. Klient: väga rahul.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VIDEO ===== -->
+<section id="video" aria-labelledby="video-h">
+  <div class="video-corridor" aria-hidden="true"></div>
+  <div class="container">
+    <div class="video-head reveal">
+      <div class="label dept-label">[ VISUAALDOKUMENDID ]</div>
+      <h2 class="section-title" id="video-h">Töö <em>nähtav</em></h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="video-terminal reveal d2">
+      <div class="video-terminal-bar" aria-hidden="true">
+        <span class="vt-dot vt-red"></span>
+        <span class="vt-dot vt-yellow"></span>
+        <span class="vt-dot vt-green"></span>
+        <span class="vt-label">RTG-RAIDI // VISUAALDOKUMENDID // KANAL 01</span>
+      </div>
+      <div class="video-embed-wrap">
+        <!-- VIDEO PLACEHOLDER — asenda YouTube video ID -->
+        <div class="video-placeholder" data-video-id="YOUR_YOUTUBE_ID_HERE">
+          <div class="vp-scan" aria-hidden="true"></div>
+          <div class="vp-content">
+            <div class="vp-play-btn" aria-label="Esita video">
+              <svg width="28" height="32" viewBox="0 0 28 32" fill="none">
+                <path d="M0 0L28 16L0 32V0Z" fill="currentColor"/>
+              </svg>
+            </div>
+            <p class="vp-label">RTG-RAIDI TUNING GARAGE</p>
+            <p class="vp-sub">Kliki lingi lisamiseks</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-terminal-footer" aria-hidden="true">
+        <span class="vt-footer-item">CODEC: H.264</span>
+        <span class="vt-footer-sep">·</span>
+        <span class="vt-footer-item">FORMAT: 16:9</span>
+        <span class="vt-footer-sep">·</span>
+        <span class="vt-footer-item">STATUS: READY</span>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ===== BOAT PERK ===== -->
 <section id="boonus" aria-labelledby="boonus-h">
@@ -563,6 +773,8 @@
         <a href="#meist">Meist</a>
         <a href="#teenused">Teenused</a>
         <a href="#galerii">Galerii</a>
+        <a href="#blogi">Tööpäevik</a>
+        <a href="#video">Video</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
 
