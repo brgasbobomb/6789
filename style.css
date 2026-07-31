@@ -18,7 +18,6 @@
   --accent:      #86c901;
   --accent-light:#a5e625;
   --accent-dim:  rgba(134,201,1,0.15);
-  --accent-glow: rgba(134,201,1,0.25);
 
   --steel:       #7d93a8;
   --steel-dim:   rgba(125,147,168,0.06);
@@ -67,15 +66,18 @@ button{cursor:pointer;font-family:inherit}
   align-items:center;
   gap:10px;
 }
+/* '' after the slash is the pseudo-element's alternative text: these are
+   decorative, so screen readers announce nothing instead of reading
+   "greater than ... underscore" around every section label. */
 .label::before{
-  content:'>';
+  content:'>' / '';
   display:inline-block;
   color:var(--steel);
   opacity:0.6;
   font-size:0.75rem;
 }
 .label::after{
-  content:'_';
+  content:'_' / '';
   display:inline-block;
   animation:blink 1.2s step-end infinite;
   opacity:0;
@@ -140,7 +142,7 @@ button{cursor:pointer;font-family:inherit}
 .corridor-divider{
   width:100%;height:1px;
   background:linear-gradient(90deg,transparent 0%,var(--steel) 20%,var(--steel) 80%,transparent 100%);
-  box-shadow:0 0 16px rgba(125,147,168,0.18), 0 0 40px rgba(125,147,168,0.06);
+  box-shadow:0 0 16px rgba(125,147,168,0.18), 0 0 40px var(--steel-dim);
   opacity:0.25;
   margin:0;
 }
@@ -257,6 +259,9 @@ section{position:relative}
 .mobile-menu.open{display:flex}
 .mobile-menu a{
   font-family:'Chakra Petch',sans-serif;
+  /* explicit: only weights 500-700 are loaded, so an unset (400) here
+     would be silently substituted */
+  font-weight:600;
   font-size:1.6rem;color:var(--text);
   transition:color var(--transition);
 }
@@ -411,7 +416,7 @@ section{position:relative}
 
 .hero-tag-inner{
   display:flex;align-items:center;gap:8px;
-  background:rgba(125,147,168,0.06);
+  background:var(--steel-dim);
   border:1px solid var(--steel-border);
   border-radius:100px;
   padding:6px 16px;
@@ -1119,7 +1124,9 @@ footer{
   font-family:'JetBrains Mono',monospace;
   font-size:0.68rem;
   letter-spacing:0.15em;
-  color:var(--text-faint);
+  /* real content, so it needs WCAG AA: --steel is 4.97:1 on --surface-2,
+     where --text-faint managed only 1.92:1 */
+  color:var(--steel);
   display:block;
   margin-bottom:10px;
 }
@@ -1235,4 +1242,22 @@ footer{
   .hero-title{font-size:2.2rem}
   .stats-inner{grid-template-columns:1fr}
   .stat-item::after{display:none !important}
+}
+
+/* ============================================================
+   REDUCED MOTION
+   Honours the OS "reduce motion" setting: stops the blinking label
+   cursor, the twinkling starfield, drifting orbs, pulsing dot and
+   scroll cue, and reveals content immediately instead of sliding it in.
+   ============================================================ */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{
+    animation-duration:0.01ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:0.01ms !important;
+    scroll-behavior:auto !important;
+  }
+  .label::after{opacity:0 !important}
+  .reveal,.reveal-left,.reveal-right{opacity:1 !important;transform:none !important}
+  .hero-tag,.hero-title,.hero-desc,.hero-btns{opacity:1 !important;transform:none !important}
 }
