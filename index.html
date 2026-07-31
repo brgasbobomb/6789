@@ -9,7 +9,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Montserrat:wght@400;600;700&family=Inter:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,500;0,600;0,700;1,600;1,700&family=Barlow:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"/>
 
   <link rel="stylesheet" href="style.css"/>
 </head>
@@ -20,11 +20,11 @@
   <a href="#avaleht">Avaleht</a>
   <a href="#meist">Meist</a>
   <a href="#teenused">Teenused</a>
-  <a href="#galerii">Galerii</a>
   <a href="#blogi">Tööpäevik</a>
-  <a href="#video">Video</a>
+  <a href="#galerii">Galerii</a>
   <a href="#boonus">Boonus</a>
-  <a href="#kontakt" class="btn btn-gold">Broneeri aeg</a>
+  <a href="#video">Video</a>
+  <a href="#kontakt" class="btn btn-accent">Broneeri aeg</a>
 </div>
 
 <!-- ===== NAVBAR ===== -->
@@ -32,7 +32,7 @@
   <div class="container nav-inner">
 
     <a href="#avaleht" class="nav-logo" aria-label="RTG-Raidi Tuning Garage avaleht">
-      <img class="nav-logo-img" src="images/rtg-logo.jpg" alt="RTG-Raidi Tuning Garage logo"/>
+      <img class="nav-logo-img" src="images/rtg-logo.png" alt="RTG-Raidi Tuning Garage logo"/>
       <div>
         <div class="nav-logo-text"><span>RTG</span>-Raidi Tuning Garage</div>
         <span class="nav-logo-sub">Auto Detailing · Ulila</span>
@@ -42,15 +42,15 @@
     <nav class="nav-links" aria-label="Peamenüü">
       <a href="#meist">Meist</a>
       <a href="#teenused">Teenused</a>
-      <a href="#galerii">Galerii</a>
       <a href="#blogi">Tööpäevik</a>
-      <a href="#video">Video</a>
+      <a href="#galerii">Galerii</a>
       <a href="#boonus">Boonus</a>
+      <a href="#video">Video</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
 
     <div class="nav-cta-wrap">
-      <a href="#kontakt" class="btn btn-gold">Broneeri aeg</a>
+      <a href="#kontakt" class="btn btn-accent">Broneeri aeg</a>
     </div>
 
     <button class="hamburger" aria-label="Ava menüü" aria-expanded="false">
@@ -61,14 +61,14 @@
 </header>
 
 <!-- ===== HERO ===== -->
-<section id="avaleht">
+<section id="avaleht" data-dept="RTG-00">
   <div id="hero">
-    <div class="hero-bg" role="img" aria-label="RTG Tuning Garage töökoda"></div>
+    <div class="hero-bg" role="img" aria-label="RTG Tuning Garage töökoda neoonvalgustusega"></div>
     <div class="hero-overlay"></div>
     <div class="hero-scan" aria-hidden="true"></div>
     <div class="hero-ray" aria-hidden="true"></div>
-    <div class="hero-corridor" aria-hidden="true"></div>
-    <div class="hero-fluorescent" aria-hidden="true"></div>
+    <div class="hero-stars" aria-hidden="true"></div>
+    <div class="hero-dust" aria-hidden="true"><span></span><span></span><span></span></div>
 
     <div class="container">
       <div class="hero-content">
@@ -82,7 +82,7 @@
 
         <h1 class="hero-title">
           Sinu auto.<br/>
-          <span class="gold italic">Meie täpsus.</span>
+          <span class="accent italic">Meie täpsus.</span>
         </h1>
 
         <p class="hero-desc">
@@ -92,7 +92,7 @@
         </p>
 
         <div class="hero-btns">
-          <a href="#teenused" class="btn btn-gold">Vaata teenuseid</a>
+          <a href="#teenused" class="btn btn-accent">Vaata teenuseid</a>
           <a href="#kontakt" class="btn btn-ghost">Broneeri aeg</a>
         </div>
 
@@ -113,34 +113,28 @@
 </section>
 
 <!-- ===== STATS BAR ===== -->
-<section id="stats-bar" aria-label="Statistika">
-  <div class="stats-terminal-header" aria-hidden="true">
-    <span class="terminal-tag">LUMON VERIFIED</span>
-    <span class="terminal-sep">///</span>
-    <span class="terminal-tag">RTG-RAIDI TUNING GARAGE</span>
-    <span class="terminal-sep">///</span>
-    <span class="terminal-tag">ULILA, TARTUMAA</span>
-  </div>
+<div class="corridor-divider"></div>
+<section id="stats-bar" aria-label="Statistika" data-dept="MDR-01">
   <div class="container">
     <div class="stats-inner">
       <div class="stat-item reveal d1">
-        <div class="stat-num terminal-num">
+        <div class="stat-num">
           <span class="counter" data-target="9" data-suffix="+">9+</span>
         </div>
         <div class="stat-label">Erinevat teenust</div>
       </div>
       <div class="stat-item reveal d2">
-        <div class="stat-num terminal-num">
+        <div class="stat-num">
           <span class="counter" data-target="100" data-suffix="%">100%</span>
         </div>
         <div class="stat-label">Rahulolu</div>
       </div>
       <div class="stat-item reveal d3">
-        <div class="stat-num terminal-num">★★★</div>
+        <div class="stat-num">★★★</div>
         <div class="stat-label">Facebooki arvustused</div>
       </div>
       <div class="stat-item reveal d4">
-        <div class="stat-num terminal-num">
+        <div class="stat-num">
           <span class="counter" data-target="24" data-suffix="h">24h</span>
         </div>
         <div class="stat-label">Vastamisaeg</div>
@@ -149,19 +143,9 @@
   </div>
 </section>
 
-<!-- ===== CORRIDOR DIVIDER ===== -->
-<div class="corridor-divider" aria-hidden="true">
-  <div class="corridor-inner">
-    <span class="corridor-code">RTG</span>
-    <div class="corridor-line"></div>
-    <span class="corridor-dept">[ DETAILIMINE &amp; RESTAUREERIMINE ]</span>
-    <div class="corridor-line"></div>
-    <span class="corridor-code">ULI</span>
-  </div>
-</div>
-
 <!-- ===== MEIST ===== -->
-<section id="meist" aria-labelledby="about-h">
+<div class="corridor-divider"></div>
+<section id="meist" aria-labelledby="about-h" data-dept="O&amp;D-02">
   <div class="container">
     <div class="about-grid">
 
@@ -207,7 +191,8 @@
 </section>
 
 <!-- ===== TEENUSED ===== -->
-<section id="teenused" aria-labelledby="svc-h">
+<div class="corridor-divider"></div>
+<section id="teenused" aria-labelledby="svc-h" data-dept="PE-03">
   <div class="container">
     <div class="services-head reveal">
       <div>
@@ -303,7 +288,8 @@
 </section>
 
 <!-- ===== BEFORE / AFTER ===== -->
-<section id="before-after" aria-labelledby="ba-h">
+<div class="corridor-divider"></div>
+<section id="before-after" aria-labelledby="ba-h" data-dept="WO-04">
   <div class="container">
     <div class="ba-section-head reveal">
       <div class="label">Tulemus räägib ise</div>
@@ -357,8 +343,96 @@
   </div>
 </section>
 
+<!-- ===== BLOGI / WORK JOURNAL ===== -->
+<div class="corridor-divider"></div>
+<section id="blogi" aria-labelledby="blogi-h" data-dept="NS-05">
+  <div class="container">
+    <div class="blog-head reveal">
+      <div class="label">Viimased tööd</div>
+      <h2 class="section-title" id="blogi-h">Töö<em>päevik</em></h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="blog-grid">
+
+      <article class="blog-card reveal d1">
+        <div class="blog-img">
+          <img src="images/restore-hood-before.jpg" alt="Rooste kapotil — enne restaureerimist" loading="lazy"/>
+        </div>
+        <div class="blog-body">
+          <span class="blog-date">2025 · JUN</span>
+          <h3 class="blog-title">Rooste restaureerimine — kapott</h3>
+          <p class="blog-desc">Tugev rooste kapotil eemaldati täielikult. Enne lakkimist käsitleti metall roostekaitsega ning tasandati hoolikalt.</p>
+          <span class="blog-tag">Restaureerimine</span>
+        </div>
+      </article>
+
+      <article class="blog-card reveal d2">
+        <div class="blog-img">
+          <img src="images/restore-rust-hole.jpg" alt="Rooste auk salongi põrandal" loading="lazy"/>
+        </div>
+        <div class="blog-body">
+          <span class="blog-date">2025 · MAY</span>
+          <h3 class="blog-title">Rooste eemaldamine — salongi põrand</h3>
+          <p class="blog-desc">Tugeva korrosiooni tõttu tekkinud augud salongi põrandas keevitati kinni ja kaeti kaitsekihiga.</p>
+          <span class="blog-tag">Restaureerimine</span>
+        </div>
+      </article>
+
+      <article class="blog-card reveal d3">
+        <div class="blog-img">
+          <img src="images/restore-interior-before.jpg" alt="Interjööri restaureerimine — enne" loading="lazy"/>
+        </div>
+        <div class="blog-body">
+          <span class="blog-date">2025 · MAY</span>
+          <h3 class="blog-title">Interjööri restaureerimine</h3>
+          <p class="blog-desc">Vana ja kulunud salongi detailid eemaldati, puhastati ja valmistati ette uueks viimistluseks.</p>
+          <span class="blog-tag">Sisemus</span>
+        </div>
+      </article>
+
+      <article class="blog-card reveal d1">
+        <div class="blog-img">
+          <img src="images/bmw-red-night.jpg" alt="Punane BMW ööfotosessioonil" loading="lazy"/>
+        </div>
+        <div class="blog-body">
+          <span class="blog-date">2025 · APR</span>
+          <h3 class="blog-title">Öine fotosessioon — BMW</h3>
+          <p class="blog-desc">Pärast täielikku poleerimist ja vahatamist korraldati öine fotosessioon, et näidata lõpptulemust parimas valguses.</p>
+          <span class="blog-tag">Välispind</span>
+        </div>
+      </article>
+
+      <article class="blog-card reveal d2">
+        <div class="blog-img">
+          <img src="images/bmw-blue-fender.jpg" alt="Sinine BMW värvitöö" loading="lazy"/>
+        </div>
+        <div class="blog-body">
+          <span class="blog-date">2025 · APR</span>
+          <h3 class="blog-title">Sinine BMW — värvitöö</h3>
+          <p class="blog-desc">Metalne sinine metallik-värv viimistleti ja kaitstii keraamilise lakiga. Tulemus — peegelläike sügavus.</p>
+          <span class="blog-tag">Välispind</span>
+        </div>
+      </article>
+
+      <article class="blog-card reveal d3">
+        <div class="blog-img">
+          <img src="images/workshop-neon.jpg" alt="RTG töökoda neonvalgustusega" loading="lazy"/>
+        </div>
+        <div class="blog-body">
+          <span class="blog-date">2025 · MAR</span>
+          <h3 class="blog-title">RTG töökoda — neontuled</h3>
+          <p class="blog-desc">Meie töökoda sai uue atmosphääri — hex-mustriga neonvalgustus laes ja kapotil loob ainulaadse keskkonna.</p>
+          <span class="blog-tag">Töökoda</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
 <!-- ===== GALERII ===== -->
-<section id="galerii" aria-labelledby="gal-h">
+<div class="corridor-divider"></div>
+<section id="galerii" aria-labelledby="gal-h" data-dept="GR-06">
   <div class="container">
     <div class="gallery-head reveal">
       <div>
@@ -372,6 +446,7 @@
         <button class="filter-btn" data-filter="tahistaevas">Tähistaevas</button>
         <button class="filter-btn" data-filter="valispind">Välispind</button>
         <button class="filter-btn" data-filter="osad">Detailid</button>
+        <button class="filter-btn" data-filter="restaureerimine">Restaureerimine</button>
       </div>
     </div>
 
@@ -385,7 +460,11 @@
         <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
       </div>
       <div class="gallery-item" data-cat="valispind">
-        <img src="images/hero-bmw-garage.jpg" alt="BMW garaaž RTG" loading="lazy"/>
+        <img src="images/workshop-neon.jpg" alt="RTG töökoda neontuled" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="valispind">
+        <img src="images/audi-green-side.jpg" alt="Roheline Audi BBS velgedel — poleeritud külgvaade" loading="lazy"/>
         <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
       </div>
       <div class="gallery-item" data-cat="sisemus">
@@ -448,32 +527,50 @@
         <img src="images/bmw-door.jpg" alt="BMW ukse detail" loading="lazy"/>
         <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
       </div>
-      <div class="gallery-item" data-cat="sisemus">
-        <img src="images/interior-bmw-brown.jpg" alt="BMW pruun sisemus" loading="lazy"/>
+
+      <!-- New images -->
+      <div class="gallery-item" data-cat="tahistaevas">
+        <img src="images/starceil-cyan.jpg" alt="Tähistaevas tsüaan" loading="lazy"/>
         <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
       </div>
-      <div class="gallery-item" data-cat="osad">
-        <img src="images/floormats-dirty.jpg" alt="Matid enne puhastust" loading="lazy"/>
+      <div class="gallery-item" data-cat="tahistaevas">
+        <img src="images/starceil-white.jpg" alt="Tähistaevas valge" loading="lazy"/>
         <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
       </div>
-      <div class="gallery-item" data-cat="osad">
-        <img src="images/headlights-old.jpg" alt="Esituled enne restaureerimist" loading="lazy"/>
-        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
-      </div>
-      <div class="gallery-item" data-cat="sisemus">
-        <img src="images/interior-white-leather-rear.jpg" alt="Valge nahk tagaistmed" loading="lazy"/>
-        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
-      </div>
-      <div class="gallery-item" data-cat="valispind">
-        <img src="images/hero-bmw-garage.jpg" alt="RTG garaaž" loading="lazy"/>
+      <div class="gallery-item" data-cat="tahistaevas">
+        <img src="images/starceil-blue.jpg" alt="Tähistaevas sinine" loading="lazy"/>
         <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
       </div>
       <div class="gallery-item" data-cat="valispind">
-        <img src="images/audi-black-hexa.jpg" alt="Audi S4 must — hexagonaalne valgustus" loading="lazy"/>
+        <img src="images/bmw-blue-fender.jpg" alt="Sinine BMW tiib" loading="lazy"/>
         <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
       </div>
       <div class="gallery-item" data-cat="valispind">
-        <img src="images/audi-green-side.jpg" alt="Audi roheline — külgvaade garaažis" loading="lazy"/>
+        <img src="images/bmw-blue-panel.jpg" alt="BMW sinine paneel lähivõte" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="valispind">
+        <img src="images/bmw-red-night.jpg" alt="Punane BMW öösel" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="valispind">
+        <img src="images/bmw-black-driveway.jpg" alt="Must BMW sissesõiduteel" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="restaureerimine">
+        <img src="images/restore-hood-before.jpg" alt="Rooste kapotil — enne" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="restaureerimine">
+        <img src="images/restore-rust-hole.jpg" alt="Rooste auk — enne" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="restaureerimine">
+        <img src="images/restore-interior-before.jpg" alt="Interjöör restaureerimisel" loading="lazy"/>
+        <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
+      </div>
+      <div class="gallery-item" data-cat="restaureerimine">
+        <img src="images/restore-headliner-before.jpg" alt="Laekate eemaldamine" loading="lazy"/>
         <div class="gallery-overlay"><div class="gallery-overlay-icon">+</div></div>
       </div>
     </div>
@@ -488,200 +585,9 @@
   <button class="lb-next" aria-label="Järgmine">&#8250;</button>
 </div>
 
-<!-- ===== BLOG / TÖÖPÄEVIK ===== -->
-<section id="blogi" aria-labelledby="blogi-h">
-  <div class="blogi-fluorescent" aria-hidden="true"></div>
-  <div class="container">
-    <div class="blogi-head reveal">
-      <div>
-        <div class="label dept-label">[ TÖÖPÄEVIK ]</div>
-        <h2 class="section-title" id="blogi-h">Töö<em>logi</em></h2>
-        <div class="section-rule"></div>
-        <p class="section-body" style="margin-top:18px">
-          Dokumenteeritud töid — iga sõiduk on uus väljakutse.
-        </p>
-      </div>
-      <div class="blogi-terminal-id" aria-hidden="true">
-        <span class="terminal-file-id">TÖÖDOKUMENDID</span>
-        <span class="terminal-file-sub">RTG / DETAILING DIVISION</span>
-      </div>
-    </div>
-
-    <div class="blogi-scroll-wrap">
-      <div class="blogi-track">
-
-        <!-- WF-001 -->
-        <article class="work-file reveal d1">
-          <div class="wf-header">
-            <span class="wf-num">WF-001</span>
-            <span class="wf-status wf-done">LÕPETATUD</span>
-          </div>
-          <div class="wf-img">
-            <img src="images/leather-before-after.jpg" alt="Naha restaureerimine" loading="lazy"/>
-          </div>
-          <div class="wf-body">
-            <div class="wf-date">2025 · SISEMUS</div>
-            <h3 class="wf-title">Naha restaureerimine</h3>
-            <p class="wf-desc">Täielik naha puhastamine, niisutamine ja ümberverhoilu. Materjal: Itaalia nahk. Toon: valge.</p>
-          </div>
-        </article>
-
-        <!-- WF-002 -->
-        <article class="work-file reveal d2">
-          <div class="wf-header">
-            <span class="wf-num">WF-002</span>
-            <span class="wf-status wf-done">LÕPETATUD</span>
-          </div>
-          <div class="wf-img">
-            <img src="images/exterior-bmw-black.jpg" alt="BMW eksterjer poleerimine" loading="lazy"/>
-          </div>
-          <div class="wf-body">
-            <div class="wf-date">2025 · VÄLISPIND</div>
-            <h3 class="wf-title">BMW eksterjer</h3>
-            <p class="wf-desc">Masinapoleerimine + keraamiline vahakiht. Kriimud eemaldatud. Tulemus: peegelläige.</p>
-          </div>
-        </article>
-
-        <!-- WF-003 -->
-        <article class="work-file reveal d3">
-          <div class="wf-header">
-            <span class="wf-num">WF-003</span>
-            <span class="wf-status wf-done">LÕPETATUD</span>
-          </div>
-          <div class="wf-img">
-            <img src="images/starceil-purple.jpg" alt="Tähistaevas paigaldus" loading="lazy"/>
-          </div>
-          <div class="wf-body">
-            <div class="wf-date">2025 · TÄHISTAEVAS</div>
-            <h3 class="wf-title">Fiber-optiline tähistaevas</h3>
-            <p class="wf-desc">Lilla RGB tähistaevas — 600 kiudu. Efektid: vilkumine, värvivahetus, tähelangemine.</p>
-          </div>
-        </article>
-
-        <!-- WF-004 -->
-        <article class="work-file reveal d1">
-          <div class="wf-header">
-            <span class="wf-num">WF-004</span>
-            <span class="wf-status wf-done">LÕPETATUD</span>
-          </div>
-          <div class="wf-img">
-            <img src="images/headlights-clean.jpg" alt="Esitulede restaureerimine" loading="lazy"/>
-          </div>
-          <div class="wf-body">
-            <div class="wf-date">2025 · OSAD</div>
-            <h3 class="wf-title">Esitulede restaureerimine</h3>
-            <p class="wf-desc">Kollased läätsed poleeritud. UV-kaitsekiht kantud. Läbipaistvus taastatud.</p>
-          </div>
-        </article>
-
-        <!-- WF-005 -->
-        <article class="work-file reveal d2">
-          <div class="wf-header">
-            <span class="wf-num">WF-005</span>
-            <span class="wf-status wf-done">LÕPETATUD</span>
-          </div>
-          <div class="wf-img">
-            <img src="images/interior-white-leather-front.jpg" alt="Valge nahkverhoilu" loading="lazy"/>
-          </div>
-          <div class="wf-body">
-            <div class="wf-date">2025 · SISEMUS</div>
-            <h3 class="wf-title">Valge nahkverhoilu — Audi</h3>
-            <p class="wf-desc">Premium valge nahk. Käsitöö õmblused. Audi A6 täielik verhoilu — esi- ja tagaistmed.</p>
-          </div>
-        </article>
-
-        <!-- WF-006 -->
-        <article class="work-file reveal d3">
-          <div class="wf-header">
-            <span class="wf-num">WF-006</span>
-            <span class="wf-status wf-done">LÕPETATUD</span>
-          </div>
-          <div class="wf-img">
-            <img src="images/starceil-teal.jpg" alt="Türkiis tähistaevas" loading="lazy"/>
-          </div>
-          <div class="wf-body">
-            <div class="wf-date">2025 · TÄHISTAEVAS</div>
-            <h3 class="wf-title">Türkiis tähistaevas</h3>
-            <p class="wf-desc">Türkiis RGB tähistaevas soovitud toonidega. Paigaldus 4h. Klient: väga rahul.</p>
-          </div>
-        </article>
-
-        <!-- WF-007 -->
-        <article class="work-file reveal d1">
-          <div class="wf-header">
-            <span class="wf-num">WF-007</span>
-            <span class="wf-status wf-done">LÕPETATUD</span>
-          </div>
-          <div class="wf-img">
-            <img src="images/audi-black-hexa.jpg" alt="Audi S4 must — hexagonaalne valgustus" loading="lazy"/>
-          </div>
-          <div class="wf-body">
-            <div class="wf-date">2025 · VÄLISPIND</div>
-            <h3 class="wf-title">Audi S4 — täispoleerimine</h3>
-            <p class="wf-desc">Must Audi S4 masinapoleeritud ja vahatatud. Hexagonaalne valgustus näitab peegelläiget.</p>
-          </div>
-        </article>
-
-        <!-- WF-008 -->
-        <article class="work-file reveal d2">
-          <div class="wf-header">
-            <span class="wf-num">WF-008</span>
-            <span class="wf-status wf-done">LÕPETATUD</span>
-          </div>
-          <div class="wf-img">
-            <img src="images/audi-green-side.jpg" alt="Audi roheline — külgvaade" loading="lazy"/>
-          </div>
-          <div class="wf-body">
-            <div class="wf-date">2025 · VÄLISPIND</div>
-            <h3 class="wf-title">Audi — roheline restaureerimine</h3>
-            <p class="wf-desc">Tumerohelise Audi täielik välispinna hooldus. Poleerimine + keraamiline vahakiht.</p>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== VIDEO ===== -->
-<section id="video" aria-labelledby="video-h">
-  <div class="video-corridor" aria-hidden="true"></div>
-  <div class="container">
-    <div class="video-head reveal">
-      <div class="label dept-label">[ VISUAALDOKUMENDID ]</div>
-      <h2 class="section-title" id="video-h">Töö <em>nähtav</em></h2>
-      <div class="section-rule"></div>
-    </div>
-    <div class="video-terminal reveal d2">
-      <div class="video-terminal-bar" aria-hidden="true">
-        <span class="vt-dot vt-red"></span>
-        <span class="vt-dot vt-yellow"></span>
-        <span class="vt-dot vt-green"></span>
-        <span class="vt-label">RTG-RAIDI // VISUAALDOKUMENDID // KANAL 01</span>
-      </div>
-      <div class="video-embed-wrap">
-        <video
-          src="videos/rtg-showcase.mp4"
-          controls
-          playsinline
-          preload="metadata"
-          poster="images/audi-black-hexa.jpg"
-          aria-label="RTG-Raidi Tuning Garage töö tutvustus"
-        ></video>
-      </div>
-      <div class="video-terminal-footer" aria-hidden="true">
-        <span class="vt-footer-item">CODEC: H.264</span>
-        <span class="vt-footer-sep">·</span>
-        <span class="vt-footer-item">FORMAT: 16:9</span>
-        <span class="vt-footer-sep">·</span>
-        <span class="vt-footer-item">STATUS: READY</span>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ===== BOAT PERK ===== -->
-<section id="boonus" aria-labelledby="boonus-h">
+<div class="corridor-divider"></div>
+<section id="boonus" aria-labelledby="boonus-h" data-dept="LC-07">
   <div class="boonus-glow" aria-hidden="true"></div>
   <div class="container">
     <div class="boonus-grid">
@@ -735,8 +641,39 @@
   </div>
 </section>
 
+<!-- ===== VIDEO ===== -->
+<div class="corridor-divider"></div>
+<section id="video" aria-labelledby="video-h" data-dept="AV-08">
+  <div class="container">
+    <div class="video-head reveal">
+      <div class="label">Liikuv pilt</div>
+      <h2 class="section-title" id="video-h">Vaata meie tööd <em>liikvel</em></h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="video-wrap reveal d1">
+      <video
+        controls
+        preload="metadata"
+        poster="images/video-poster.jpg"
+        aria-label="RTG-Raidi Tuning Garage promoreel"
+      >
+        <source src="videos/rtg-promo.mp4" type="video/mp4"/>
+        Teie brauser ei toeta videot.
+      </video>
+      <div class="video-caption">
+        <span class="video-caption-icon">🎬</span>
+        <div class="video-caption-text">
+          <strong>RTG-Raidi Tuning Garage — teenuste ülevaade</strong>
+          Kui vajate näiteks iluhooldust, poleerimist, naha restaureerimist või tähistaeva paigaldust — RTG on teie valik Tartumaal.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ===== KONTAKT ===== -->
-<section id="kontakt" aria-labelledby="kontakt-h">
+<div class="corridor-divider"></div>
+<section id="kontakt" aria-labelledby="kontakt-h" data-dept="TE-09">
   <div class="container">
     <div class="contact-grid">
 
@@ -799,7 +736,7 @@
     <div class="footer-grid">
 
       <div class="footer-brand">
-        <img class="footer-logo-img" src="images/rtg-logo.jpg" alt="RTG-Raidi Tuning Garage"/>
+        <img class="footer-logo-img" src="images/rtg-logo.png" alt="RTG-Raidi Tuning Garage"/>
         <p class="footer-tagline">Auto Detailing · Ulila, Tartumaa, Eesti</p>
       </div>
 
@@ -808,8 +745,7 @@
         <a href="#meist">Meist</a>
         <a href="#teenused">Teenused</a>
         <a href="#galerii">Galerii</a>
-        <a href="#blogi">Tööpäevik</a>
-        <a href="#video">Video</a>
+        <a href="#boonus">Boonus</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
 
@@ -826,6 +762,9 @@
 
     </div>
 
+    <p class="footer-cipher" aria-hidden="true">
+      4143&nbsp;173&nbsp;992890 &nbsp;·&nbsp; NS-8.20 &nbsp;·&nbsp; 80920&nbsp;P18 &nbsp;·&nbsp; SEC.89000021 &nbsp;·&nbsp; MS-DPN &nbsp;·&nbsp; 573.799958 &nbsp;·&nbsp; RTG-UT-2025 &nbsp;·&nbsp; 4143&nbsp;173&nbsp;992890
+    </p>
     <div class="footer-bottom">
       <p class="footer-copy">&copy; 2025 RTG-Raidi Tuning Garage. Kõik õigused kaitstud.</p>
       <a href="https://www.facebook.com/share/1JnikZ6SPM/"

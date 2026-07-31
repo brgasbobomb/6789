@@ -1,6 +1,5 @@
 // ============================================================
 // RTG-Raidi Tuning Garage — script.js
-// Severance / Lumon theme layer
 // ============================================================
 
 // Hero load-in
@@ -173,37 +172,3 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowLeft') navLB(-1);
   if (e.key === 'ArrowRight') navLB(1);
 });
-
-// ===== BLOG HORIZONTAL DRAG SCROLL =====
-const blogiWrap = document.querySelector('.blogi-scroll-wrap');
-if (blogiWrap) {
-  let isDown = false, startX, scrollLeft;
-  blogiWrap.addEventListener('mousedown', e => {
-    isDown = true;
-    startX = e.pageX - blogiWrap.offsetLeft;
-    scrollLeft = blogiWrap.scrollLeft;
-  });
-  blogiWrap.addEventListener('mouseleave', () => { isDown = false; });
-  blogiWrap.addEventListener('mouseup', () => { isDown = false; });
-  blogiWrap.addEventListener('mousemove', e => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - blogiWrap.offsetLeft;
-    blogiWrap.scrollLeft = scrollLeft - (x - startX) * 1.2;
-  });
-}
-
-// ===== VIDEO PLACEHOLDER → IFRAME =====
-const videoPlaceholder = document.querySelector('.video-placeholder');
-if (videoPlaceholder) {
-  videoPlaceholder.addEventListener('click', () => {
-    const vid = videoPlaceholder.dataset.videoId;
-    if (!vid || vid === 'YOUR_YOUTUBE_ID_HERE') return;
-    const iframe = document.createElement('iframe');
-    iframe.src = `https://www.youtube.com/embed/${vid}?autoplay=1&rel=0`;
-    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-    iframe.allowFullscreen = true;
-    iframe.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:none;';
-    videoPlaceholder.replaceWith(iframe);
-  });
-}
