@@ -192,8 +192,6 @@ section{position:relative}
 }
 .nav-logo-img{
   height:46px;width:auto;
-  filter:invert(1);
-  mix-blend-mode:screen;
   object-fit:contain;
 }
 .nav-logo-text{
@@ -991,7 +989,6 @@ footer{
 .footer-brand{}
 .footer-logo-img{
   height:52px;width:auto;
-  filter:invert(1);mix-blend-mode:screen;
   object-fit:contain;
   margin-bottom:12px;
 }
